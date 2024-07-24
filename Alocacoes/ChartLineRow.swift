@@ -14,7 +14,7 @@ struct PerformanceData: Identifiable {
   let value: Double
 }
 
-struct ChartView: View {
+struct ChartLineRow: View {
   let performanceData: [PerformanceData] = [
     PerformanceData(date: Date().addingTimeInterval(-3600*24*30), value: 1),
     PerformanceData(date: Date().addingTimeInterval(-3600*24*25), value: 100),
@@ -64,5 +64,5 @@ struct ChartView: View {
 }
 
 #Preview {
-  ChartView()
+  ChartLineRow()
 }

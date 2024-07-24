@@ -29,9 +29,9 @@ struct ContentView: View {
               }
             }
             
-            ChartView()
+            ChartLineRow()
             
-            
+            ChartLineRow()
             
             Spacer()
           }

@@ -11,7 +11,7 @@
 		1BA0D75E2C5070D6006AB90C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0D75D2C5070D6006AB90C /* ContentView.swift */; };
 		1BA0D7602C5070D8006AB90C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0D75F2C5070D8006AB90C /* Assets.xcassets */; };
 		1BA0D7632C5070D8006AB90C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0D7622C5070D8006AB90C /* Preview Assets.xcassets */; };
-		1BA0D76A2C507B32006AB90C /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0D7692C507B32006AB90C /* ChartView.swift */; };
+		1BA0D76A2C507B32006AB90C /* ChartLineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0D7692C507B32006AB90C /* ChartLineRow.swift */; };
 		1BA0D76C2C507BB6006AB90C /* SpecialDataRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0D76B2C507BB6006AB90C /* SpecialDataRow.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +21,7 @@
 		1BA0D75D2C5070D6006AB90C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1BA0D75F2C5070D8006AB90C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BA0D7622C5070D8006AB90C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1BA0D7692C507B32006AB90C /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		1BA0D7692C507B32006AB90C /* ChartLineRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLineRow.swift; sourceTree = "<group>"; };
 		1BA0D76B2C507BB6006AB90C /* SpecialDataRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialDataRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +58,7 @@
 				1BA0D75B2C5070D6006AB90C /* AlocacoesApp.swift */,
 				1BA0D75D2C5070D6006AB90C /* ContentView.swift */,
 				1BA0D76B2C507BB6006AB90C /* SpecialDataRow.swift */,
-				1BA0D7692C507B32006AB90C /* ChartView.swift */,
+				1BA0D7692C507B32006AB90C /* ChartLineRow.swift */,
 				1BA0D75F2C5070D8006AB90C /* Assets.xcassets */,
 				1BA0D7612C5070D8006AB90C /* Preview Content */,
 			);
@@ -146,7 +146,7 @@
 				1BA0D75E2C5070D6006AB90C /* ContentView.swift in Sources */,
 				1BA0D75C2C5070D6006AB90C /* AlocacoesApp.swift in Sources */,
 				1BA0D76C2C507BB6006AB90C /* SpecialDataRow.swift in Sources */,
-				1BA0D76A2C507B32006AB90C /* ChartView.swift in Sources */,
+				1BA0D76A2C507B32006AB90C /* ChartLineRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
