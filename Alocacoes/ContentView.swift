@@ -6,19 +6,45 @@
 //
 
 import SwiftUI
+import Charts
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+  var body: some View {
+    NavigationStack {
+      ScrollView {
+        ZStack {
+          VStack(alignment: .leading) {
+            Text("Patrimonio Atual")
+              .foregroundStyle(.secondary)
+              
+            Text(1234, format: .currency(code: "brl"))
+              .font(.largeTitle)
+              .bold()
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+              HStack {
+                SpecialDataRow(title: "Variação total", percentage: 0.12)
+                SpecialDataRow(title: "Variação total", percentage: 0.62)
+                SpecialDataRow(title: "Variação total", percentage: -0.56)
+              }
+            }
+            
+            ChartView()
+            
+            
+            
+            Spacer()
+          }
+          .frame(maxWidth: .infinity, alignment: .leading)
+          .padding()
         }
-        .padding()
+      }
+      .navigationTitle("Carteira Atual")
+      .navigationBarTitleDisplayMode(.inline)
     }
+  }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
 }
