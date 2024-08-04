@@ -11,7 +11,7 @@ import SwiftUI
 struct AlocacoesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BuyStocksView()
         }
     }
 }

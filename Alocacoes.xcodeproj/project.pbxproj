@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2E39F72C5F200400E09E76 /* BuyStocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2E39F62C5F200400E09E76 /* BuyStocksView.swift */; };
+		1B2E39F92C5F2AFD00E09E76 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2E39F82C5F2AFD00E09E76 /* Stock.swift */; };
 		1BA0D75C2C5070D6006AB90C /* AlocacoesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0D75B2C5070D6006AB90C /* AlocacoesApp.swift */; };
 		1BA0D75E2C5070D6006AB90C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0D75D2C5070D6006AB90C /* ContentView.swift */; };
 		1BA0D7602C5070D8006AB90C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0D75F2C5070D8006AB90C /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B2E39F62C5F200400E09E76 /* BuyStocksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyStocksView.swift; sourceTree = "<group>"; };
+		1B2E39F82C5F2AFD00E09E76 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		1BA0D7582C5070D6006AB90C /* Alocacoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alocacoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA0D75B2C5070D6006AB90C /* AlocacoesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlocacoesApp.swift; sourceTree = "<group>"; };
 		1BA0D75D2C5070D6006AB90C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				1BA0D75B2C5070D6006AB90C /* AlocacoesApp.swift */,
+				1B2E39F82C5F2AFD00E09E76 /* Stock.swift */,
 				1BA0D75D2C5070D6006AB90C /* ContentView.swift */,
+				1B2E39F62C5F200400E09E76 /* BuyStocksView.swift */,
 				1BA0D76B2C507BB6006AB90C /* SpecialDataRow.swift */,
 				1BA0D7692C507B32006AB90C /* ChartLineRow.swift */,
 				1BA0D75F2C5070D8006AB90C /* Assets.xcassets */,
@@ -145,8 +151,10 @@
 			files = (
 				1BA0D75E2C5070D6006AB90C /* ContentView.swift in Sources */,
 				1BA0D75C2C5070D6006AB90C /* AlocacoesApp.swift in Sources */,
+				1B2E39F92C5F2AFD00E09E76 /* Stock.swift in Sources */,
 				1BA0D76C2C507BB6006AB90C /* SpecialDataRow.swift in Sources */,
 				1BA0D76A2C507B32006AB90C /* ChartLineRow.swift in Sources */,
+				1B2E39F72C5F200400E09E76 /* BuyStocksView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
