@@ -8,57 +8,87 @@
 import SwiftUI
 
 struct BuyStocksView: View {
-  @State private var dinheiro = 0.0
-  @State private var porcentagemCompra = 0.0
-    var body: some View {
-      VStack {
-        Text("Quanto quer investir ?")
-          .font(.title2)
-          .bold()
+  @State private var dinheiro: Decimal = 1000
+  @State private var stocks: [Stock] = Stock.arraySample
+  
+  
+  var body: some View {
+    VStack {
+      MoneyToSpend(dinheiro: $dinheiro)
+      
+      Divider()
+      
+      VStack(alignment: .leading, spacing: 0) {
+        Text("Suas ações")
+          .font(.subheadline)
         
-        TextField("Quanto quer investir ?", value: $dinheiro, format: .currency(code: "brl"))
-          .keyboardType(.decimalPad)
-          .labelsHidden()
-          .multilineTextAlignment(.center)
-          .font(.title)
-          .bold()
-          .foregroundStyle(.accentBlue)
-        
-        Divider()
-        
-        VStack(alignment: .leading, spacing: 0) {
-          Text("Suas ações")
-            .font(.subheadline)
-          
-          List(["BBAS3", "SANB11"], id: \.self) { ativo in
-            HStack {
-              Text(ativo.description)
-                .frame(width: 60)
-              
-              Divider()
-              TextField("Porcentagem da compra", value: $porcentagemCompra, format: .percent)
-              Divider()
-              
-              Text((dinheiro * porcentagemCompra).description)
-            }
-          }
+        List($stocks) { $ativo in
+          stockRow(ativo: $ativo, dinheiro: dinheiro)
         }
-        .padding()
-        .background(
+      }
+      .padding()
+      .background(
         RoundedRectangle(cornerRadius: 12)
           .fill(Color(.secondarySystemBackground))
-        )
-        .padding()
-        
-        Spacer()
-      }
-      .navigationTitle("Comprando Ativos")
-      .navigationBarTitleDisplayMode(.inline)
+      )
+      .padding()
+      
+      Spacer()
     }
+    .navigationTitle("Comprando Ativos")
+    .navigationBarTitleDisplayMode(.inline)
+  }
 }
 
 #Preview {
   NavigationStack {
     BuyStocksView()
+  }
+}
+
+struct MoneyToSpend: View {
+  @Binding var dinheiro: Decimal
+  
+  var body: some View {
+    VStack {
+      Text("Quanto quer investir ?")
+        .font(.title2)
+        .bold()
+      
+      TextField("Quanto quer investir ?", value: $dinheiro, format: .currency(code: "brl"))
+        .keyboardType(.decimalPad)
+        .labelsHidden()
+        .multilineTextAlignment(.center)
+        .font(.title)
+        .bold()
+        .foregroundStyle(.accentBlue)
+    }
+  }
+}
+
+struct stockRow: View {
+  @Binding var ativo: Stock
+  var dinheiro: Decimal
+  
+  var body: some View {
+    HStack {
+      Text(ativo.code)
+        .frame(width: 60)
+      
+      Divider()
+      
+      TextField("Porcentagem da compra", value: $ativo.percentage, format: .percent)
+        .frame(width: 40)
+      
+      Divider()
+      
+      Text("R$ \(ativo.price.description)")
+        .frame(width: 70)
+      
+      Divider()
+      
+      Text("\((dinheiro * Decimal(ativo.percentage) / ativo.price).description)")
+    }
+    .frame(maxWidth: .infinity)
   }
 }
