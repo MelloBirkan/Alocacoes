@@ -59,12 +59,9 @@
 		1BA0D75A2C5070D6006AB90C /* Alocacoes */ = {
 			isa = PBXGroup;
 			children = (
-				1BA0D75B2C5070D6006AB90C /* AlocacoesApp.swift */,
-				1B2E39F82C5F2AFD00E09E76 /* Stock.swift */,
-				1BA0D75D2C5070D6006AB90C /* ContentView.swift */,
-				1B2E39F62C5F200400E09E76 /* BuyStocksView.swift */,
-				1BA0D76B2C507BB6006AB90C /* SpecialDataRow.swift */,
-				1BA0D7692C507B32006AB90C /* ChartLineRow.swift */,
+				73CB2B262D5AEB4A0003B58D /* Views */,
+				73CB2B252D5AEB400003B58D /* Models */,
+				73CB2B242D5AEB310003B58D /* App */,
 				1BA0D75F2C5070D8006AB90C /* Assets.xcassets */,
 				1BA0D7612C5070D8006AB90C /* Preview Content */,
 			);
@@ -77,6 +74,57 @@
 				1BA0D7622C5070D8006AB90C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		73CB2B242D5AEB310003B58D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1BA0D75B2C5070D6006AB90C /* AlocacoesApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		73CB2B252D5AEB400003B58D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B2E39F82C5F2AFD00E09E76 /* Stock.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		73CB2B262D5AEB4A0003B58D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73CB2B282D5AEB6D0003B58D /* Stocks */,
+				73CB2B272D5AEB5F0003B58D /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		73CB2B272D5AEB5F0003B58D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1BA0D75D2C5070D6006AB90C /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		73CB2B282D5AEB6D0003B58D /* Stocks */ = {
+			isa = PBXGroup;
+			children = (
+				1B2E39F62C5F200400E09E76 /* BuyStocksView.swift */,
+				73CB2B292D5AEB7F0003B58D /* Components */,
+			);
+			path = Stocks;
+			sourceTree = "<group>";
+		};
+		73CB2B292D5AEB7F0003B58D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1BA0D7692C507B32006AB90C /* ChartLineRow.swift */,
+				1BA0D76B2C507BB6006AB90C /* SpecialDataRow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
