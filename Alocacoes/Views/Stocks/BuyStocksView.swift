@@ -158,26 +158,7 @@ struct BuyStocksView: View {
 
       // Botão flutuante de confirmação
       if !viewModel.stocks.isEmpty {
-        VStack {
-          Spacer()
-          Button(action: {
-            dismiss()
-          }) {
-            HStack {
-              Image(systemName: "checkmark.circle.fill")
-              Text("Confirmar")
-            }
-            .font(.headline)
-            .foregroundColor(.white)
-            .padding()
-            .background(
-              Capsule()
-                .fill(Color.accentColor)
-                .shadow(color: .black.opacity(0.15), radius: 10, x: 0, y: 5)
-            )
-          }
-          .padding(.bottom, 16)
-        }
+        FloatingActionButton()
       }
     }
     .navigationTitle("Nova Alocação")
