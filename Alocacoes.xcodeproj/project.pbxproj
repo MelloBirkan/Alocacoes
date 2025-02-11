@@ -15,6 +15,8 @@
 		1BA0D7632C5070D8006AB90C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0D7622C5070D8006AB90C /* Preview Assets.xcassets */; };
 		1BA0D76A2C507B32006AB90C /* ChartLineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0D7692C507B32006AB90C /* ChartLineRow.swift */; };
 		1BA0D76C2C507BB6006AB90C /* SpecialDataRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0D76B2C507BB6006AB90C /* SpecialDataRow.swift */; };
+		73D4AC9D2D5AF9FE00F070B5 /* AddStockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC9C2D5AF9FE00F070B5 /* AddStockView.swift */; };
+		73D4AC9F2D5AFB7B00F070B5 /* StocksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D4AC9E2D5AFB7200F070B5 /* StocksViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		1BA0D7622C5070D8006AB90C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1BA0D7692C507B32006AB90C /* ChartLineRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLineRow.swift; sourceTree = "<group>"; };
 		1BA0D76B2C507BB6006AB90C /* SpecialDataRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialDataRow.swift; sourceTree = "<group>"; };
+		73D4AC9C2D5AF9FE00F070B5 /* AddStockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStockView.swift; sourceTree = "<group>"; };
+		73D4AC9E2D5AFB7200F070B5 /* StocksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 		1BA0D75A2C5070D6006AB90C /* Alocacoes */ = {
 			isa = PBXGroup;
 			children = (
+				73D4AC972D5AF8EB00F070B5 /* ViewModels */,
 				73CB2B262D5AEB4A0003B58D /* Views */,
 				73CB2B252D5AEB400003B58D /* Models */,
 				73CB2B242D5AEB310003B58D /* App */,
@@ -114,6 +119,7 @@
 			children = (
 				1B2E39F62C5F200400E09E76 /* BuyStocksView.swift */,
 				73CB2B292D5AEB7F0003B58D /* Components */,
+				73D4AC9C2D5AF9FE00F070B5 /* AddStockView.swift */,
 			);
 			path = Stocks;
 			sourceTree = "<group>";
@@ -125,6 +131,14 @@
 				1BA0D76B2C507BB6006AB90C /* SpecialDataRow.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		73D4AC972D5AF8EB00F070B5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				73D4AC9E2D5AFB7200F070B5 /* StocksViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +214,10 @@
 				1BA0D75E2C5070D6006AB90C /* ContentView.swift in Sources */,
 				1BA0D75C2C5070D6006AB90C /* AlocacoesApp.swift in Sources */,
 				1B2E39F92C5F2AFD00E09E76 /* Stock.swift in Sources */,
+				73D4AC9F2D5AFB7B00F070B5 /* StocksViewModel.swift in Sources */,
 				1BA0D76C2C507BB6006AB90C /* SpecialDataRow.swift in Sources */,
 				1BA0D76A2C507B32006AB90C /* ChartLineRow.swift in Sources */,
+				73D4AC9D2D5AF9FE00F070B5 /* AddStockView.swift in Sources */,
 				1B2E39F72C5F200400E09E76 /* BuyStocksView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
